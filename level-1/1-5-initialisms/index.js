@@ -1,7 +1,6 @@
 
 const initialise = text => {
-  /* Your code here */
-  return 'RIP';
+  return text.split(' ').map(x => x[0]).map(x => x.toUpperCase()).join('')
 };
 
 module.exports = {
