@@ -1,0 +1,56 @@
+{
+  "test-0": {
+    "config": {
+      "checkWindow": 3,
+      "dropAbsoluteThreshold": 10,
+      "dropRatioThreshold": 0.5
+    },
+    "sensorData": [20,25,30,40,45,50,50,50,50,50,50,50,50,50,50,50],
+    "output":     [0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ]
+  },
+  "test-1": {
+    "config": {
+      "checkWindow": 3,
+      "dropAbsoluteThreshold": 10,
+      "dropRatioThreshold": 0.5
+    },
+    "sensorData": [20,25,30,40,45,50,50,50,50,50,50,50,50,20,20,20],
+    "output":     [0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,1 ,1 ,1 ]
+  },
+  "test-2": {
+    "config": {
+      "checkWindow": 3,
+      "dropAbsoluteThreshold": 10,
+      "dropRatioThreshold": 0.5
+    },
+    "sensorData": [20,25,30,40,45,50,50,50,50,50,50,50,50,40,30,20,10,0],
+    "output":     [0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,1 ,1, 1, 1]
+  },
+  "test-3": {
+    "config": {
+      "checkWindow": 3,
+      "dropAbsoluteThreshold": 10,
+      "dropRatioThreshold": 0.5
+    },
+    "sensorData": [20,25,30,40,45,50,50,50,50,50,50,50,50,44,40,35,32,0],
+    "output":     [0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,1, 1, 1]
+  },
+  "test-4": {
+    "config": {
+      "checkWindow": 1,
+      "dropAbsoluteThreshold": 10,
+      "dropRatioThreshold": 0.8
+    },
+    "sensorData": [50,44,40,35,32,0],
+    "output":     [0 ,0 ,0 ,0, 0, 1]
+  },
+  "test-5": {
+    "config": {
+      "checkWindow": 1,
+      "dropAbsoluteThreshold": 5,
+      "dropRatioThreshold": 0.1
+    },
+    "sensorData": [50,44,40,35,32,0],
+    "output":     [0 ,1 ,0 ,0, 0, 1]
+  }
+}
