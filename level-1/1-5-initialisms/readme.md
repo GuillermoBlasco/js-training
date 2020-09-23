@@ -1,14 +1,17 @@
-# 1.1. Ordinals
+# 1.5. Initialisms
 
-Create a function that takes as input a positive integer number (1,2,3,4,...)
-and returns the ordinal string representation of that number.
+Phrases can be initialised to shorten them. Initialise usually
+means to take the first letter of each word. Sometimes adding
+dots, sometimes capitalising the nouns.
 
-Examples:
+For the purpose of this exercise we are going to shorten any
+phrase by taking the first letter as uppercase. Something like:
 
+```shell script
+The cat is staring -> TCIS
+World united -> WU
 ```
-1 -> 1st
-2 -> 2nd
-3 -> 4rd
-4 -> 4th
-...
-```
+
+Consider that the test set has some trickery to represent situations
+you may find when dealing with human inputted strings. Like more than
+one space.
