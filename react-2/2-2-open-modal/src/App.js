@@ -18,7 +18,7 @@ function App() {
         Open Modal
       </button>
       <ModalComponent
-        open={openModal}
+        open={}
         handleOnClose={handleOnClose}
       >
         <h3>React Simple Modal Example</h3>
