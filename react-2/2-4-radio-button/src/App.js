@@ -4,10 +4,6 @@ import './App.css';
 function App() {
   const [selectedValue, setSelectedValue] = useState();
 
-  const handleChange = event => {
-    setSelectedValue(event.target.value);
-  };
-
   return (
     <div className="container">
       <h1>What is your OS (Operative System) ?</h1>
@@ -15,9 +11,6 @@ function App() {
         <label>
           <input
             type="radio"
-            value="linux"
-            checked={selectedValue === "linux"}
-            onChange={handleChange}
           />
           Linux
         </label>
@@ -26,9 +19,6 @@ function App() {
         <label>
           <input
             type="radio"
-            value="windows"
-            checked={selectedValue === "windows"}
-            onChange={handleChange}
           />
           Windows
         </label>
@@ -37,9 +27,6 @@ function App() {
         <label>
           <input
             type="radio"
-            value="macos"
-            checked={selectedValue === "macos"}
-            onChange={handleChange}
           />
           MacOs
         </label>
@@ -48,9 +35,6 @@ function App() {
         <label>
           <input
             type="radio"
-            value="other"
-            checked={selectedValue === "other"}
-            onChange={handleChange}
           />
           Other
         </label>
