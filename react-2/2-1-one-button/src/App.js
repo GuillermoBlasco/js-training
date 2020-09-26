@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 
-function App() {
+function Checkbox() {
   return (
     <div className="App">learn react
     </div>
