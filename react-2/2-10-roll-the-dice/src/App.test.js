@@ -3,15 +3,13 @@ import {fireEvent, render} from '@testing-library/react';
 import { act } from 'react-dom/test-utils';
 import App from './App';
 
-test('renders learn react link', () => {
+test('Base elements exist', () => {
   const { getByText, getAllByText } = render(<App />);
   const button = getByText(/Roll them/i);
   const dices = getAllByText(/Dice is/i);
   expect(button).toBeInTheDocument();
   expect(dices.length).toBe(2);
-  act(() => {
-    button.dispatchEvent(new MouseEvent('click', {bubbles: true}));
-  });
+  fireEvent.click(button);
 });
 
 test('renders "You win!" when a double six', () => {
