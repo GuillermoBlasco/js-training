@@ -6,11 +6,13 @@ const rollOneDice = () => Math.floor(Math.random() * 6) + 1;
 
 function App() {
   const [dices, setDices] = React.useState([1,1]);
+  const rollDices = () => setDices([rollOneDice(), rollOneDice()]);
+  const isDoubleSix = dices.filter(x => x === 6).length === 2;
   return (
     <div className="App">
-      <button>Roll them</button>
+      <button onClick={rollDices}>Roll them</button>
       {dices.map((x,i) => <p key={i}>Dice is {x}</p>)}
-      {/* on double six, this should display <p>You win!</p> */}
+      {isDoubleSix && <p>You win!</p>}
     </div>
   );
 }
