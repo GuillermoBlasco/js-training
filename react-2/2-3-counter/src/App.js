@@ -6,11 +6,11 @@ function App() {
   const [value, setValue] = useState(0);
 
   const incrementValue = () => {
-    /* Your code here */
+   setValue(value + 1);
   };
 
   const decrementValue = () => {
-    /* Your code here */
+   setValue(value - 1);
   };
 
   /* modify this buttons to solve the exercise.
@@ -20,8 +20,8 @@ function App() {
     <div className="App">
       <h1>Welcome to the Counter Exercise!</h1>
         <p data-testid="value">{value}</p>
-        <button data-testid="decrement">Decrement</button>
-        <button data-testid="increment">Increment</button>
+        <button data-testid="decrement" onClick={decrementValue}>Decrement</button>
+        <button data-testid="increment" onClick={incrementValue}>Increment</button>
     </div>
   );
 }
