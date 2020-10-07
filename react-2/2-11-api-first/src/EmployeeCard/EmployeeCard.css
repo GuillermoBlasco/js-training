@@ -1,0 +1,12 @@
+.EmployeeCard {
+    display: flex;
+}
+
+.EmployeeCard img {
+    max-width: 50px;
+    border-radius: 502px;
+    max-height: 50px;
+}
+.EmployeeCard h2 {
+    margin: 0;
+}
