@@ -5,7 +5,11 @@
 }
 
 .option {
+	height: 15px;
+}
 
+.option:hover {
+	background-color: #d4cfcc;
 }
 
 .label {
@@ -16,5 +20,5 @@
 .dropdown {
 	position: relative;
 	margin-top: 2px;
-	border: 1px dashed #f60a0a;
+	box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
 }
