@@ -1,0 +1,28 @@
+{
+  "motos": [
+    {
+      "id": 1,
+      "marca": "honda",
+      "modelo": "cb650r",
+      "cilindrada": "649cc",
+      "color": "azul",
+      "precio": 3000
+    },
+    {
+      "id": 2,
+      "marca": "ktm",
+      "modelo": "1290superdukeGT",
+      "cilindrada": "1290",
+      "color": "naranja",
+      "precio": 4000
+    },
+    {
+      "marca": "ducati",
+      "modelo": "panigaleV4",
+      "cilindrada": "1200c",
+      "color": "roja",
+      "precio": 27000,
+      "id": 3
+    }
+  ]
+}
