@@ -1,0 +1,20 @@
+{
+  "name": "3-1-hello-world",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "easy-livereload": "^1.4.3",
+    "jest": "^26.4.2",
+    "node-dev": "^5.2.0"
+  },
+  "scripts": {
+    "start": "NODE_ENV=production node app.js",
+    "start-dev": "NODE_ENV=development node-dev app.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  }
+}
