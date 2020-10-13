@@ -1,0 +1,18 @@
+.PrevPageBlack {
+    background-color: gray;
+    text-transform: uppercase;
+    color: white;
+}
+.PrevPageWhite {
+    background-color: white;
+    text-transform: uppercase;
+
+    color: black;
+}
+
+.PrevPagePink {
+    background-color: white;
+    text-transform: uppercase;
+
+    color: deeppink;
+}

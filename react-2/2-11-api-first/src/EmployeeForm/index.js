@@ -1,8 +1,11 @@
 import React from 'react';
+import {ThemeContext} from "../ThemeContext";
+import {Button} from "../Button";
 
 
 
 export const EmployeeForm = () => {
+  const { theme } = React.useContext(ThemeContext);
   const [name, setName] = React.useState('');
   const handleCreate = () => {
     fetch('http://localhost:3000/employees', {
@@ -15,6 +18,6 @@ export const EmployeeForm = () => {
   };
   return (<div className="EmployeeCard">
     <input value={name} onChange={e => setName(e.target.value)} />
-    <button onClick={handleCreate}>Create!</button>
+    <Button onClick={handleCreate}>Create!</Button>
   </div>)
 };
